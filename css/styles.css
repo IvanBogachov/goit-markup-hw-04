@@ -129,10 +129,18 @@ section {
 }
 /* hero */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2F303A;
     text-align: center;
+    background-image: url(../images/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-title {
     max-width: 700px;
