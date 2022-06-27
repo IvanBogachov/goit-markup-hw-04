@@ -130,20 +130,19 @@ section {
 }
 /* hero */
 .hero {
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    /* max-width: 1600px;
+    min-height: 600px; */
+    /* margin-left: auto;
+    margin-right: auto; */
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: rgba(47, 48, 58, 0.4);
+    background-color: #2F303A;
     text-align: center;
     background-image: linear-gradient(
         to right,
      rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), 
       url(../images/heroimg.jpg);
-    /* background-image: url(../images/heroimg.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
