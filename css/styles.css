@@ -131,10 +131,6 @@ section {
     margin-right: 10px;
     fill: currentColor;
 }
-/* .tell-icon:hover,
-.smart-icon:hover {
-    fill: var(--highlight-color);
-} */
 .contact .item + .item {
     margin-left: 50px;
 }
@@ -202,13 +198,12 @@ section {
 }
 .pecul-li {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 .pecul-li .item > p {
     margin: 0;
 }
-.pecul-li > li {
+.pecul-li .item {
     width: 270px;
 }
 .pecul-li .item:last-child {
@@ -217,29 +212,14 @@ section {
 .pecul-li .item + .item {
     margin-left: 30px;
 }
-.pecul-li .item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background: var(--secondary-beckgrouncol-port);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* outline: 1px solid tomato; */
+.pecul-icon {
+	padding: 25px 100px;
+	background-color: var(--secondary-beckgrouncol-port);
 }
-.item.icon-satellite::before {
-    background-image: url(../images/Group1.svg);
-}
-.item.icon-clock::before {
-    background-image: url(../images/Group2.svg);
-}
-.item.icon-comp::before {
-    background-image: url(../images/Group3.svg);
-}
-.item.icon-cosm::before {
-    background-image: url(../images/Group4.svg);
-
-}
+/* .pec-ico {
+	width: 70px;
+	height: 70px;
+} */
 .title-pecul {
     margin-top: 0;
     margin-bottom: 0;
@@ -347,7 +327,7 @@ section {
 	fill: var(--person-bck);
 }
 
-/* .person a:hover,
+.person a:hover,
 .person a:focus {
 	border-radius: 50%;
 	background-color: var(--accent-color);
@@ -362,7 +342,7 @@ section {
 .si {
 	width: 20px;
 	height: 20px;
-} */
+}
 
 
 
