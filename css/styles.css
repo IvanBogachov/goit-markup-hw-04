@@ -114,18 +114,37 @@ section {
 }
 .contact {
     display: flex;
+    padding: 0;
     margin-left: auto;
+    align-items: baseline;
     color: var(--primery-text-color);
 }
+.contact .item {
+    display: flex;
+    align-items: center;
+}
+.tell-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.smart-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+/* .tell-icon:hover,
+.smart-icon:hover {
+    fill: var(--highlight-color);
+} */
 .contact .item + .item {
     margin-left: 50px;
 }
 .current,
 .main-nav-li:focus,
 .main-nav-li:hover,
-.contact-li:hover,
-.contact-li:focus {
+.contact .item:hover,
+.contact .item:focus {
     color: var(--highlight-color);
+    fill: var(--highlight-color);
     text-decoration: none;
 }
 /* hero */
@@ -310,6 +329,44 @@ section {
     letter-spacing: 0.03em;
     color: #212121;
 }
+.person {
+	display: flex;
+	width: 206px;
+	height: 44px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 32px;
+}
+
+.person a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	padding: 12px;
+	fill: var(--person-bck);
+}
+
+/* .person a:hover,
+.person a:focus {
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	color: var(--menu-bck);
+	fill: var(--menu-bck);
+}
+
+.person .social + .social {
+	margin-left: 10px;
+}
+
+.si {
+	width: 20px;
+	height: 20px;
+} */
+
+
+
+
 
 /* client */
 /* .lessons {
@@ -326,10 +383,9 @@ section {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
 }
+
 .client-li .item {
-    /* outline: 1px solid tomato; */
     color: var(--color-icon);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -346,6 +402,54 @@ section {
     margin-left: 30px;
 }
 
+
+/* .clients-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.company {
+	display: flex;
+	justify-content: center;
+}
+
+.clients {
+	padding-bottom: 94px;
+}
+
+.clients a {
+	display: flex;
+	width: 170px;
+	height: 92px;
+	align-items: center;
+	justify-content: center;
+	fill: var(--person-bck);
+	border: 1px solid var(--person-bck);
+	border-radius: 4px;
+}
+
+.company .card {
+	display: flex;
+}
+
+.company a:hover,
+.company a:focus {
+	fill: var(--accent-color);
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+}
+
+.clients .card + .card {
+	margin-left: 30px;
+}
+
+.ci {
+	width: 106px;
+	height: 60px;
+} */
 
 
 
@@ -392,6 +496,29 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* .social-links a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	padding: 12px;
+	margin-top: 20px;
+	border-radius: 50%;
+	fill: var(--menu-bck);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover,
+.social-links a:focus {
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	fill: var(--menu-bck);
+	color: var(--menu-bck);
+}
+
+.links .icon + .icon {
+	margin-left: 10px;
+} */
+
 
 
 /* portfolio */
@@ -412,7 +539,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .main-li .item:last-child {
     margin-right: 0;
