@@ -212,10 +212,31 @@ section {
 .pecul-li .item + .item {
     margin-left: 30px;
 }
-.pecul-icon {
+.pecul-li .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: var(--secondary-beckgrouncol-port);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-ant::before {
+    background-image: url(../images/svg/Group1.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/svg/Group2.svg);
+}
+.icon-comp::before {
+    background-image: url(../images/svg/Group3.svg);
+}
+.icon-cosm::before {
+    background-image: url(../images/svg/Group4.svg);
+}
+/* .pecul-icon {
 	padding: 25px 100px;
 	background-color: var(--secondary-beckgrouncol-port);
-}
+} */
 /* .pec-ico {
 	width: 70px;
 	height: 70px;
@@ -309,49 +330,32 @@ section {
     letter-spacing: 0.03em;
     color: #212121;
 }
-.person {
+.soc {
 	display: flex;
 	width: 206px;
 	height: 44px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 32px;
+    margin-top: 16px;
 }
-
-.person a {
-	display: block;
+.soc a {
+	display: flex;
+    align-items: center;
+    justify-content: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	padding: 12px;
-	fill: var(--person-bck);
+	fill: var(--color-icon);
 }
-
-.person a:hover,
-.person a:focus {
+.soc a:hover {
 	border-radius: 50%;
-	background-color: var(--accent-color);
-	color: var(--menu-bck);
-	fill: var(--menu-bck);
+	background-color: var(--highlight-color);
+	fill: var(--secondary-beckgrouncol-port);
 }
-
-.person .social + .social {
+.soc .social + .social {
 	margin-left: 10px;
 }
-
-.si {
-	width: 20px;
-	height: 20px;
-}
-
-
-
-
-
 /* client */
-/* .lessons {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
 .client-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -366,7 +370,7 @@ section {
 }
 
 .client-li .item {
-    color: var(--color-icon);
+    /* color: var(--color-icon); */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
@@ -381,6 +385,16 @@ section {
 .client-li .item + .item {
     margin-left: 30px;
 }
+.client-li a {
+    fill: var(--primery-text-color);
+}
+.client-li .item:hover,
+.client-li a:hover {
+    fill: var(--highlight-color);
+    border-color: var(--highlight-color);
+
+}
+
 
 
 /* .clients-title {
