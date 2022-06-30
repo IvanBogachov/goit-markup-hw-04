@@ -59,10 +59,11 @@ section {
     margin: 0 auto;
 }
 .list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
+
 .link {
     color: inherit;
     text-decoration: none;
@@ -371,7 +372,6 @@ section {
 }
 
 .client-li .item {
-    /* color: var(--color-icon); */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
@@ -389,11 +389,13 @@ section {
 .client-li a {
     fill: var(--primery-text-color);
 }
-.client-li .item:hover,
-.client-li a:hover {
-    fill: var(--highlight-color);
+.client-li a:hover,
+.client-li .item:hover {
     border-color: var(--highlight-color);
+    fill: var(--highlight-color);
+    
 }
+
 
 
 
@@ -401,7 +403,6 @@ section {
 
 /* footer */
 footer {
-    
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -429,12 +430,7 @@ footer {
     text-decoration: none;
     
 }
-/* .adress-foot .list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 0;
-} */
+
 .adrfoo > li:nth-child(n + 2) {
     margin-top: 9px;
 }
@@ -460,8 +456,6 @@ footer {
 .network {
 	display: flex;
 	width: 206px;
-	/* height: 80px; */
-	/* margin-top: 15px; */
 	
 }
 .networ h2 {
@@ -483,7 +477,6 @@ footer {
 	width: 44px;
 	height: 44px;
 	padding: 12px;
-	/* margin-top: 20px; */
 	border-radius: 50%;
 	fill: var(--primery-backgrouncol-port);
 	background-color: rgba(255, 255, 255, 0.1);
@@ -501,29 +494,7 @@ footer {
     height: 20px;
 }
 
-/* 
 
-.menu-footer .link {
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 14px;
-	line-height: 1.7;
-}
-
-
-
-
-
-.social-links a:hover,
-.social-links a:focus {
-	border-radius: 50%;
-	background-color: var(--accent-color);
-	fill: var(--menu-bck);
-	color: var(--menu-bck);
-}
-
-.links .icon + .icon {
-	margin-left: 10px;
-} */
 
 
 
@@ -573,6 +544,8 @@ cursor: pointer;
 .main-btn:hover {
     color: #fff;
     background-color: var(--highlight-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 
 }
 .works-li {
