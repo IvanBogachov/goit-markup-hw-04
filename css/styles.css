@@ -371,7 +371,7 @@ section {
     cursor: pointer;
 }
 
-.client-li .item {
+.client-svg {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
@@ -389,11 +389,9 @@ section {
 .client-li a {
     fill: var(--primery-text-color);
 }
-.client-li a:hover,
-.client-li .item:hover {
+.client-svg:hover {
     border-color: var(--highlight-color);
     fill: var(--highlight-color);
-    
 }
 
 
