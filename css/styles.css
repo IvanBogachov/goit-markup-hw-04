@@ -393,7 +393,6 @@ section {
 .client-li a:hover {
     fill: var(--highlight-color);
     border-color: var(--highlight-color);
-
 }
 
 
@@ -402,16 +401,21 @@ section {
 
 /* footer */
 footer {
+    
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer {
+    display: flex;
+    justify-content: flex-start;
 }
 .foot-log {
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 0;
-    margin-bottom: 20px;
+    
 }
 .footer-logo {
     font-family: Raleway, sans-serif;
@@ -423,6 +427,7 @@ footer {
     color: #fff;
     word-spacing: inherit;
     text-decoration: none;
+    
 }
 /* .adress-foot .list {
     display: flex;
@@ -445,16 +450,21 @@ footer {
     color: #fff;
 }
 .adress-foot {
+    margin-top: 20px;
     color: rgba(255, 255, 255, 0.6);
+}
+.networ {
+    margin-top: 15px;
+    margin-left: 70px;
 }
 .network {
 	display: flex;
 	width: 206px;
-	height: 80px;
-	margin-top: 15px;
-	margin-left: 70px;
+	/* height: 80px; */
+	/* margin-top: 15px; */
+	
 }
-.network h2 {
+.networ h2 {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -462,17 +472,18 @@ footer {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primery-backgrouncol-port);
+    text-align: start;
     margin-bottom: 20px;
 }
 
 .network a {
 	display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 	width: 44px;
 	height: 44px;
 	padding: 12px;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	border-radius: 50%;
 	fill: var(--primery-backgrouncol-port);
 	background-color: rgba(255, 255, 255, 0.1);
@@ -484,6 +495,10 @@ footer {
 }
 .links .netwo + .netwo {
 	margin-left: 10px;
+}
+.netsvg {
+    width: 20px;
+    height: 20px;
 }
 
 /* 
