@@ -117,11 +117,16 @@ section {
     display: flex;
     padding: 0;
     margin-left: auto;
-    align-items: baseline;
+    align-items: center;
     color: var(--primery-text-color);
 }
 .contact .item {
     display: flex;
+    align-items: center;
+}
+.contact-li {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .tell-icon {
@@ -138,11 +143,10 @@ section {
 .current,
 .main-nav-li:focus,
 .main-nav-li:hover,
-.contact .item:hover,
-.contact .item:focus {
+.contact-li:focus,
+.contact-li:hover {
     color: var(--highlight-color);
     fill: var(--highlight-color);
-    text-decoration: none;
 }
 /* hero */
 .hero {
@@ -348,7 +352,8 @@ section {
 	border-radius: 50%;
 	fill: var(--color-icon);
 }
-.soc a:hover {
+.soc a:hover,
+.soc a:focus {
 	border-radius: 50%;
 	background-color: var(--highlight-color);
 	fill: var(--secondary-beckgrouncol-port);
@@ -389,7 +394,8 @@ section {
 .client-li a {
     fill: var(--primery-text-color);
 }
-.client-svg:hover {
+.client-svg:hover,
+.client-svg:focus {
     border-color: var(--highlight-color);
     fill: var(--highlight-color);
 }
@@ -479,7 +485,8 @@ footer {
 	fill: var(--primery-backgrouncol-port);
 	background-color: rgba(255, 255, 255, 0.1);
 }
-.network a:hover {
+.network a:hover,
+.network a:focus {
     border-radius: 50%;
 	background-color: var(--highlight-color);
 
