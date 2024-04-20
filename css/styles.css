@@ -108,6 +108,7 @@ img {
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+    padding: 24px 0;
 }
 .adres-link {
     font-weight: 400;
@@ -119,9 +120,6 @@ img {
 .adres-link:hover,
 .adres-link:focus {
     color: #404bbf;
-}
-.adres-item {
-    padding: 24px 0;
 }
 
 main {
