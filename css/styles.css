@@ -81,7 +81,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     padding-top: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
     margin-right: 76px;
 }
 .nav-link {
@@ -145,7 +145,7 @@ main {
     color: #ffffff;
     max-width: 496px;
     padding-top: 0;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     margin-right: auto;
     margin-left: auto;
 }
