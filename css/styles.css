@@ -51,6 +51,10 @@ img {
     padding-bottom: 120px;
 }
 
+/* зроблені переходи. Час - 250ms,
+функція розподілу часу - cubic-bezier(0.4, 0, 0.2, 1) */
+
+
 /* ======= HEADER SECTION =======*/
 .header {
     display: flex;
@@ -94,11 +98,13 @@ img {
     position: absolute;
     /* left: 0;
     bottom: 0; */
+    margin-top: 20px;
     border-radius: 2px;
     width: 48px;
     height: 4px;
     background: #404bbf;
     display: none;
+    transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover::after {
     display: block;
@@ -111,6 +117,7 @@ img {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -133,6 +140,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-link:hover,
 .adres-link:focus {
@@ -184,6 +192,7 @@ main {
     margin: 0 auto;
     display: block;
     min-width: 169px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-but:hover,
 .hero-but:focus {
@@ -275,11 +284,40 @@ main {
 .portf-item {
     flex-basis: calc((100% - 48px) / 3);
 }
+.portf-item {
+    position: relative;
+    overflow: hidden;
+}
 .portf-hp {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portf-item:hover .overlay {
+    transform: translateX(0);
+}
+.overlay p {
+    width: 296px;
+    margin: 40px 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
 
 /* ======= FOOTER SECTION ======= */
