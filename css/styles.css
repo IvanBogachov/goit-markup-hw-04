@@ -219,8 +219,6 @@ main {
 .benef-item {
     flex-basis: calc((100% - 72px) / 4);
 }
-.benef-svg {
-}
 .benef-cart {
     display: flex;
     justify-content: center;
