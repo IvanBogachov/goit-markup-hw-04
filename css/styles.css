@@ -216,6 +216,11 @@ main {
     flex-basis: calc((100% - 72px) / 4);
 }
 .benef-svg {
+}
+.benef-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
