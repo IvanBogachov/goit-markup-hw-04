@@ -252,7 +252,7 @@ main {
     display: flex;
     gap: 24px;
 }
-.item-p {
+.team-item .item-p {
     margin-bottom: 8px;
 }
 .item-hp {
